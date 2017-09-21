@@ -3,10 +3,10 @@
 #原版下载
 wget -c http://www.51yd.org/YiDuInstaller-Nginx-V1.1.9Beta.zip
 unzip  YiDuInstaller-Nginx-V1.1.9Beta.zip
-wget -c https://github.com/olmtv/yidu/blob/master/conf/server.xml
-\cp server.xml  YiDuInstaller-Nginx/conf/
-wget -c https://github.com/olmtv/yidu/blob/master/ROOT/WEB-INF/classes/log4j.properties
-\cp log4j.properties    YiDuInstaller-Nginx-bt/ROOT/WEB-INF/classes/
+wget -c https://github.com/olmtv/yidu/archive/master.zip
+unzip master.zip
+\cp  yidu-master/conf/server.xml  YiDuInstaller-Nginx/conf/
+\cp  yidu-master/ROOT/WEB-INF/classes/log4j.properties    YiDuInstaller-Nginx/ROOT/WEB-INF/classes/
 cd YiDuInstaller-Nginx
 
 
