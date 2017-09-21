@@ -26,7 +26,8 @@ chmod +x /etc/rc.d/init.d/tomcat
 chkconfig --add tomcat
 chkconfig tomcat on
 
-rm -rf /www/wwwroot/webapps/ROOT/*  #移除原有文件 ，避免有文件，或者有人建立了这个目录
+#rm -rf /www/wwwroot/webapps/ROOT/*  #移除原有文件 ，避免有文件，或者有人建立了这个目录
+mkdir -p /www/wwwroot/webapps/ROOT/
 mv ROOT/* /www/wwwroot/webapps/ROOT/
 
 #安装数据库
