@@ -14,3 +14,7 @@ wget -c https://raw.githubusercontent.com/olmtv/yidu/master/installbt.sh
 chmod +x installbt.sh
 
 ./installbt.sh
+
+
+网站路径/www/wwwroot/webapps/
+日志路径/www/wwwlogs/yidu/
