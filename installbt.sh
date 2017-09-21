@@ -1,5 +1,13 @@
 #!/bin/bash
 
+#原版下载
+wget -c http://www.51yd.org/YiDuInstaller-Nginx-V1.1.9Beta.zip
+unzip  YiDuInstaller-Nginx-V1.1.9Beta.zip
+\cp conf/server.xml  YiDuInstaller-Nginx/conf/
+\cp ROOT/WEB-INF/classes/log4j.properties    YiDuInstaller-Nginx-bt/ROOT/WEB-INF/classes/
+cd YiDuInstaller-Nginx
+
+
 #安装JDK
 chmod +x jdk-6u45-linux-x64-rpm.bin
 ./jdk-6u45-linux-x64-rpm.bin
@@ -16,7 +24,7 @@ chmod +x /etc/rc.d/init.d/tomcat
 chkconfig --add tomcat
 chkconfig tomcat on
 
-rm -rf /www/wwwroot/webapps/ROOT/*  #移除原有文件 因为更换目录，所以这个不不需要了
+rm -rf /www/wwwroot/webapps/ROOT/*  #移除原有文件 ，避免有文件，或者有人建立了这个目录
 mv ROOT/* /www/wwwroot/webapps/ROOT/
 
 #安装数据库
