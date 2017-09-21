@@ -17,4 +17,5 @@ chmod +x installbt.sh
 
 
 网站路径/www/wwwroot/webapps/
+
 日志路径/www/wwwlogs/yidu/
