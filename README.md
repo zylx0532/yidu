@@ -4,5 +4,7 @@
 选择  启用反向代理
 下载本脚本，解压，增加脚本权限。
 wget -c https://raw.githubusercontent.com/olmtv/yidu/master/installbt.sh
+
 chmod +x installbt.sh
+
 ./installbt.sh
