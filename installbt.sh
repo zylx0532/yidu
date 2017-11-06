@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #原版下载
-wget -c http://www.51yd.org/YiDuInstaller-Nginx-V1.1.9Beta.zip
-unzip  YiDuInstaller-Nginx-V1.1.9Beta.zip
+wget -c https://www.51yd.org/YiDuInstaller-V1.1.9Beta-centos7.zip
+unzip  YiDuInstaller-V1.1.9Beta-centos7.zip
 wget -c https://github.com/olmtv/yidu/archive/master.zip
 unzip master.zip
-\cp  yidu-master/conf/server.xml  YiDuInstaller-Nginx/conf/
-\cp  yidu-master/ROOT/WEB-INF/classes/log4j.properties    YiDuInstaller-Nginx/ROOT/WEB-INF/classes/
-cd YiDuInstaller-Nginx
+\cp  yidu-master/conf/server.xml  YiDuInstaller/conf/
+\cp  yidu-master/ROOT/WEB-INF/classes/log4j.properties    YiDuInstaller/ROOT/WEB-INF/classes/
+cd YiDuInstaller
 
 
 #安装JDK
